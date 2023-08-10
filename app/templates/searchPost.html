@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+
+  <div class="home">
+        <h1>Results</h1>
+          <table>
+          <tr>
+            <th>Season</th>
+            <th>Episode</th>
+            <th>Who</th>
+            <th>Time Stamp</th>    
+            <br>
+          </tr>
+          {% for u in entry %}
+          <tr>
+            <td>{{ u[0] }}</td>
+            <td>{{ u[1] }}</td>
+            <td>{{ u[2] }}</td>
+            <td>{{ u[3] }}</td>
+            <br>
+            
+          </tr>
+          {% endfor %}
+        </table>
+
+
+        
+
+        {% for image in imageList %}
+          <img src={{image}} width="400" height="400" object-fit: cover;>
+      
+        {% endfor %}
+
+  </div>
+{% endblock %}
