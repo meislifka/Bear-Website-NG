@@ -1,4 +1,4 @@
-# All The bears references in new girl
+# All the references to bears in New Girl
 
 ## Users
 
@@ -10,7 +10,7 @@
 </ul>
 
 ### Installations
-git clone https://github.com/meislifka/Sea-Lion-Capstone-Project.git \
+git clone https://github.com/meislifka/Bear-Website-NG.git \
 pip install Flask flask-login Flask-Session 
 
 
@@ -24,7 +24,7 @@ pip install Flask flask-login Flask-Session
 </ul>
 
 ### Installations
-git clone https://github.com/meislifka/Sea-Lion-Capstone-Project.git \
+git clone https://github.com/meislifka/Bear-Website-NG.git \
 pip install Flask flask-login Flask-Session 
 
 ## VS Code extensions
