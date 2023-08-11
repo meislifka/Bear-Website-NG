@@ -54,6 +54,7 @@ def print_image_search(season , episode):
     
     r.sort()
     print("HERE IS R:")
+    print("Adding this for the commit")
     print(r)
     return r            
 
