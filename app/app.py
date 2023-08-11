@@ -10,6 +10,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import os.path
 import random
 
+
+# FOR GIT 
+# git commit 'a 'm "message"
+# git push origin HEAD:master
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app = Flask(__name__)
 
@@ -21,29 +25,31 @@ UPLOAD_FOLDER=os.path.join(BASE_DIR, "static/images")
 
 def print_image_search(season , episode):
     image_list = os.listdir(UPLOAD_FOLDER)
-    result = []
+    result = [] 
+    r = []
     if(season !="" and episode !=""):
         print("IN HERE 1:")
         string = "S" + season + "E" + episode
         result.append(string +".mp4")
-        result.append(string +".png")
+        result.append(string +".jpeg")
     elif(season !=""):
         for i in range(1,24):
             print("IN HERE 2:")
             string = "S" + season + "E" + str(i)
             result.append(string +".mp4")
-            result.append(string +".png")
+            result.append(string +".jpeg")
     elif(episode !=""):
         print("IN HERE 3:")
         for j in range(1,9):
             string = "S" + str(j) + "E" + episode
             result.append(string +".mp4")
-            result.append(string +".png")
+            result.append(string +".jpeg")
         for j in range(10,26):
             string = "S" + str(j) + "E" + episode
             result.append(string +".mp4")
-            result.append(string +".png")
-    r = []
+            result.append(string +".jpeg")
+    
+   
     r = list(set(image_list).intersection(result))
     r = [i.replace("S","static/images/S") for i in r]
     
@@ -114,6 +120,9 @@ def search():
                 statement = statement + ' and episode=?'
             else:
                 statement = statement + ' episode=?'
+        if(sea == "" and ep == "" and who == ""):    
+            message = "Try again:Please enter a search parameter"
+            return render_template('search.html', message=message)
         
         print("season"+ sea + "Ep " + ep)
         imageList = print_image_search(sea, ep)  
