@@ -12,9 +12,7 @@ import random
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app = Flask(__name__)
-app.config["SESSION_PERMANENT"] = False
-app.config["SECRET_KEY"] = 'super secret key'
-app.config["SESSION_TYPE"] = "filesystem"
+
 Session(app)
 
 # Set path of app.py to use for database connections
@@ -25,15 +23,18 @@ def print_image_search(season , episode):
     image_list = os.listdir(UPLOAD_FOLDER)
     result = []
     if(season !="" and episode !=""):
+        print("IN HERE 1:")
         string = "S" + season + "E" + episode
         result.append(string +".mp4")
         result.append(string +".png")
     elif(season !=""):
-        for i in range(1,8):
+        for i in range(1,24):
+            print("IN HERE 2:")
             string = "S" + season + "E" + str(i)
             result.append(string +".mp4")
             result.append(string +".png")
     elif(episode !=""):
+        print("IN HERE 3:")
         for j in range(1,9):
             string = "S" + str(j) + "E" + episode
             result.append(string +".mp4")
@@ -43,13 +44,13 @@ def print_image_search(season , episode):
             result.append(string +".mp4")
             result.append(string +".png")
     r = []
-    r = list(set(result).intersection(image_list))
-    r = [i.replace("S","static/images/S") for i in result]
+    r = list(set(image_list).intersection(result))
+    r = [i.replace("S","static/images/S") for i in r]
     
-    print("result:")
-    print(result)
-    print("imlist:")
-    print(image_list)
+    #print("result:")
+    #print(result)
+    #print("imlist:")
+    #print(image_list)
     
     r.sort()
     print("HERE IS R:")
