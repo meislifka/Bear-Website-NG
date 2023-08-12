@@ -4,23 +4,96 @@
     <title>Where's the Bear New Girl</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?f=classic&s=solid&pc=%23e3e3e3">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <strong><nav>
-          <span class="text-box">SeeLion</span>
-          <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-            <li><a href="{{ url_for('search') }}">Search </a></li>
-          </ul>
-        </nav></strong>
+      <div class="sidenav">
+        <button class="dropdown-btn">Season 1
+          <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">1: Pilot</a>
+          <a href="#">2: Kyptonite</a>
+          <a href="#">3: </a>
+          <a href="#">4: </a>
+          <a href="#">5: </a>
+          <a href="#">6: </a>
+          <a href="#">7: </a>
+          <a href="#">8: </a>
+          <a href="#">9: </a>
+          <a href="#">10: </a>
+          <a href="#">11: </a>
+          <a href="#">12: </a>
+          <a href="#">13: </a>
+          <a href="#">14: </a>
+          <a href="#">15: </a>
+          <a href="#">16: </a>
+          <a href="#">17: </a>
+          <a href="#">18: </a>
+          <a href="#">19: </a>
+          <a href="#">20: </a>
+          <a href="#">21: </a>
+          <a href="#">22: </a>
+          <a href="#">23: </a>
+          <a href="#">24: </a>
+        </div>
+
+        <button class="dropdown-btn">Season 2
+          <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">1: Pilot</a>
+          <a href="#">2: Kyptonite</a>
+          <a href="#">3: </a>
+          <a href="#">4: </a>
+          <a href="#">5: </a>
+          <a href="#">6: </a>
+          <a href="#">7: </a>
+          <a href="#">8: </a>
+          <a href="#">9: </a>
+          <a href="#">10: </a>
+          <a href="#">11: </a>
+          <a href="#">12: </a>
+          <a href="#">13: </a>
+          <a href="#">14: </a>
+          <a href="#">15: </a>
+          <a href="#">16: </a>
+          <a href="#">17: </a>
+          <a href="#">18: </a>
+          <a href="#">19: </a>
+          <a href="#">20: </a>
+          <a href="#">21: </a>
+          <a href="#">22: </a>
+          <a href="#">23: </a>
+          <a href="#">24: </a>
+        </div>
+        </div>
+
+        <a href="#contact">Search</a>
       </div>
-    </header>
     <div class="container">
       {% block content %}
       {% endblock %}
     </div>
+    <script>
+      //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+    </script>
   </body>
 </html>
+
+
+
