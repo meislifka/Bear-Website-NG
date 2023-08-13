@@ -2,22 +2,7 @@
 
 <html>
   <!-- Header Menu of the Page -->
-<header>
-  <!-- Top header menu containing
-      logo and Navigation bar -->
-  <div id="top-header">
-     
-      
-          <img.bear src="/static/images/bear.jpeg"    />
-      
-      <!-- Navigation Menu -->
-      <h5>WHERE'S THE BEAR?</h5>
-  </div>
-  <!-- Image menu in Header to contain an Image and
-      a sample text over that image -->
-  <div id="header-image-menu">
-  </div>
-</header>
+
 
   <head>
     <title>Where's the Bear New Girl</title>
@@ -25,6 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?f=classic&s=solid&pc=%23e3e3e3">
   </head>
+
+  <header>
+    <div class="top-header" >
+       
+      <div>
+        <img src="/static/images/bear.jpeg" class = "bear" width="75" height=50 style="float: left" > 
+        <img src="/static/images/bear.jpeg" class = "bear2" width="75" height=50 style="float: right"  > 
+        <h5><strong>WHERE'S THE BEAR?</strong></h5>
+        
+    </div>
+  </header>
 
   <body>
       <div class="sidenav">
@@ -50,8 +46,8 @@
           <a href="{{ url_for('S1E14') }}">14: Bully</a>
           <a href="{{ url_for('S1E15') }}">15: Injured</a>
           <a href="{{ url_for('S1E16') }}">16: Control</a>
-          <a href="{{ url_for('S1E17') }}">17: Fancyman, Part 1</a>
-          <a href="{{ url_for('S1E18') }}">18: Fancyman, Part 2</a>
+          <a href="{{ url_for('S1E17') }}">17: Fancyman</a>
+          <a href="{{ url_for('S1E18') }}">18: Fancyman II</a>
           <a href="{{ url_for('S1E19') }}">19: Secrets</a>
           <a href="{{ url_for('S1E20') }}">20: Normal</a>
           <a href="{{ url_for('S1E21') }}">21: Kids</a>
@@ -87,7 +83,7 @@
           <a href="{{ url_for('S2E21') }}">21: First Date</a>
           <a href="{{ url_for('S2E22') }}">22: Bachelorette Party</a>
           <a href="{{ url_for('S2E23') }}">23: Virgins</a>
-          <a href="{{ url_for('S2E24') }}">24: Winston's Birthday (Part One)</a>
+          <a href="{{ url_for('S2E24') }}">24: Winston's Birthday (Part 1)</a>
           <a href="{{ url_for('S2E25') }}">24: Elaine's Big Day</a>
         </div>
         <button class="dropdown-btn">Season 3
@@ -120,8 +116,6 @@
 
         </div>
         </div>
-
-        <a href="#contact">Search</a>
       </div>
     <div class="container">
       {% block content %}

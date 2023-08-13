@@ -66,14 +66,24 @@ body {
 }
 .bear {
   margin-left:300px;
-  border: 7px solid rgba(230, 255, 5, 0);   
+  margin-top: 0px;
   border-radius: 25px;
-  width:"75";
-  height:"50" ;
-  ;  
-  
+  border: 0px;
+ 
 }
 
+.bear2 {
+  transform: translateX(-38px);
+  margin-top: 0px;
+  border-radius: 25px;
+  border: 0px;
+ 
+}
+
+div.top-header{
+  background-color: rgb(0, 64, 241); 
+
+}
 
 video {
   margin-left:405px;
@@ -89,14 +99,18 @@ video {
     text-align: center;
     letter-spacing: -2px;
     margin-left: 200px;
+    transform: translateX(20px);
   }
   h2 {
     font-size: 3em;
+    text-shadow: -1px -1px 0 #000;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
     color: rgb(0, 64, 241); 
     margin-top: 40px;
     text-align: center;
     letter-spacing: -2px;
     margin-left: 200px;
+    transform: translateX(20px);
   }
   h3 {
     font-size: 1.7em;
@@ -106,6 +120,7 @@ video {
     text-align: center;
     letter-spacing: -1px;
     color: #999;
+    transform: translateX(20px);
   }
   h4 {
     font-size: 1.7em;
@@ -114,15 +129,34 @@ video {
     text-align: center;
     letter-spacing: -1px;
     color: rgb(18, 138, 0);
+    transform: translateX(20px);
   }
   h5 {
-    font-size: 1.7em;
-    font-weight: 100;
-    margin-left: 200px;
+    text-shadow: -2px -2px 0 #000;
+    font-size: 2.5em;
+    font-weight: 200;
+    transform: translateX(300px);
     margin-top: 10px;
-    text-align: center;
+  
+    
     letter-spacing: -1px;
     color: #fbff00;
+    /*font-size: 2.5em;
+    font-weight: 200;
+    margin-left: 670px;
+    margin-top: 10px;
+    text-align: left;
+    letter-spacing: -1px;
+    color: #fbff00;*/
+  }
+
+  h6 {
+    font-size: 1.2em;
+    color: rgb(0, 64, 241); 
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 200px;
   }
 
   p {
