@@ -55,12 +55,19 @@ body {
        -moz-border-radius: 6px;
             border-radius: 6px;
   }
+
+ img {
+    margin-left:405px;
+    
+}
+
   h1 {
     font-size: 2em;
     color: rgb(8, 42, 128); 
     margin-top: 40px;
-    text-align: left;
+    text-align: center;
     letter-spacing: -2px;
+    margin-left: 200px;
   }
   h2 {
     font-size: 3em;
@@ -68,6 +75,7 @@ body {
     margin-top: 40px;
     text-align: center;
     letter-spacing: -2px;
+    margin-left: 200px;
   }
   h3 {
     font-size: 1.7em;
@@ -146,7 +154,7 @@ body {
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -178,7 +186,7 @@ body {
 
 /* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 250px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }

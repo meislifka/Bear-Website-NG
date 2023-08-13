@@ -12,7 +12,7 @@ import random
 
 
 # FOR GIT 
-# git commit 'a 'm "message"
+# git commit -a -m "message"
 # git push origin HEAD:master
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app = Flask(__name__)
@@ -75,10 +75,202 @@ db = con.cursor()
 @app.route('/')
 def home():
     return render_template('home.html')
-@app.route('/about/')
-def about():
-    return render_template('about.html')
 
+@app.route('/S1E1/')
+def S1E1():
+    return render_template('S1E1.html')
+
+@app.route('/S1E2/')
+def S1E2():
+    return render_template('S1E2.html')
+
+@app.route('/S1E3/')
+def S1E3():
+    return render_template('S1E3.html')
+
+@app.route('/S1E4/')
+def S1E4():
+    return render_template('S1E4.html')
+
+@app.route('/S1E5/')
+def S1E5():
+    return render_template('S1E5.html')
+
+@app.route('/S1E6/')
+def S1E6():
+    return render_template('S1E6.html')
+
+@app.route('/S1E7/')
+def S1E7():
+    return render_template('S1E7.html')
+
+@app.route('/S1E8/')
+def S1E8():
+    return render_template('S1E8.html')
+
+@app.route('/S1E9/')
+def S1E9():
+    return render_template('S1E9.html')
+
+@app.route('/S1E10/')
+def S1E10():
+    return render_template('S1E10.html')
+
+@app.route('/S1E11/')
+def S1E11():
+    return render_template('S1E11.html')
+
+@app.route('/S1E12/')
+def S1E12():
+    return render_template('S1E12.html')
+
+@app.route('/S1E13/')
+def S1E13():
+    return render_template('S1E13.html')
+
+@app.route('/S1E14/')
+def S1E14():
+    return render_template('S1E14.html')
+
+@app.route('/S1E15/')
+def S1E15():
+    return render_template('S1E15.html')
+
+@app.route('/S1E16/')
+def S1E16():
+    return render_template('S1E16.html')
+
+@app.route('/S1E17/')
+def S1E17():
+    return render_template('S1E17.html')
+
+@app.route('/S1E18/')
+def S1E18():
+    return render_template('S1E18.html')
+
+@app.route('/S1E19/')
+def S1E19():
+    return render_template('S1E19.html')
+
+@app.route('/S1E20/')
+def S1E20():
+    return render_template('S1E20.html')
+
+@app.route('/S1E21/')
+def S1E21():
+    return render_template('S1E21.html')
+
+@app.route('/S1E22/')
+def S1E22():
+    return render_template('S1E22.html')
+
+@app.route('/S1E23/')
+def S1E23():
+    return render_template('S1E23.html')
+
+@app.route('/S1E24/')
+def S1E24():
+    return render_template('S1E24.html')
+
+@app.route('/S2E1/')
+def S2E1():
+    return render_template('S2E1.html')
+
+@app.route('/S2E2/')
+def S2E2():
+    return render_template('S2E2.html')
+
+@app.route('/S2E3/')
+def S2E3():
+    return render_template('S2E3.html')
+
+@app.route('/S2E4/')
+def S2E4():
+    return render_template('S2E4.html')
+
+@app.route('/S2E5/')
+def S2E5():
+    return render_template('S2E5.html')
+
+@app.route('/S2E6/')
+def S2E6():
+    return render_template('S2E6.html')
+
+@app.route('/S2E7/')
+def S2E7():
+    return render_template('S2E7.html')
+
+@app.route('/S2E8/')
+def S2E8():
+    return render_template('S2E8.html')
+
+@app.route('/S2E9/')
+def S2E9():
+    return render_template('S2E9.html')
+
+@app.route('/S2E10/')
+def S2E10():
+    return render_template('S2E10.html')
+
+@app.route('/S2E11/')
+def S2E11():
+    return render_template('S2E11.html')
+
+@app.route('/S2E12/')
+def S2E12():
+    return render_template('S2E12.html')
+
+@app.route('/S2E13/')
+def S2E13():
+    return render_template('S2E13.html')
+
+@app.route('/S2E14/')
+def S2E14():
+    return render_template('S2E14.html')
+
+@app.route('/S2E15/')
+def S2E15():
+    return render_template('S2E15.html')
+
+@app.route('/S2E16/')
+def S2E16():
+    return render_template('S2E16.html')
+
+@app.route('/S2E17/')
+def S2E17():
+    return render_template('S2E17.html')
+
+@app.route('/S2E18/')
+def S2E18():
+    return render_template('S2E18.html')
+
+@app.route('/S2E19/')
+def S2E19():
+    return render_template('S2E19.html')
+
+@app.route('/S2E20/')
+def S2E20():
+    return render_template('S2E20.html')
+
+@app.route('/S2E21/')
+def S2E21():
+    return render_template('S1E21.html')
+
+@app.route('/S2E22/')
+def S2E22():
+    return render_template('S2E22.html')
+
+@app.route('/S2E23/')
+def S2E23():
+    return render_template('S2E23.html')
+
+@app.route('/S2E24/')
+def S2E24():
+    return render_template('S2E24.html')
+
+@app.route('/S2E25/')
+def S2E25():
+    return render_template('S2E25.html')
 
 def allowed_file(filename):
     return '.' in filename and \
