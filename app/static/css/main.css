@@ -61,6 +61,11 @@ body {
     
 }
 
+video {
+  margin-left:405px;
+  
+}
+
   h1 {
     font-size: 2em;
     color: rgb(8, 42, 128); 
