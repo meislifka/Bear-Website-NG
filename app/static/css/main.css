@@ -58,11 +58,27 @@ body {
 
  img {
     margin-left:405px;
+    border: 7px solid rgb(0, 64, 241);   
+    border-radius: 25px;
+    
+    ;  
     
 }
+.bear {
+  margin-left:300px;
+  border: 7px solid rgba(230, 255, 5, 0);   
+  border-radius: 25px;
+  width:"75";
+  height:"50" ;
+  ;  
+  
+}
+
 
 video {
   margin-left:405px;
+  border: 7px solid rgb(0, 64, 241);
+  border-radius: 25px;  
   
 }
 
@@ -98,6 +114,15 @@ video {
     text-align: center;
     letter-spacing: -1px;
     color: rgb(18, 138, 0);
+  }
+  h5 {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-left: 200px;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #fbff00;
   }
 
   p {

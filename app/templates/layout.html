@@ -1,11 +1,31 @@
 <!DOCTYPE html>
+
 <html>
+  <!-- Header Menu of the Page -->
+<header>
+  <!-- Top header menu containing
+      logo and Navigation bar -->
+  <div id="top-header">
+     
+      
+          <img.bear src="/static/images/bear.jpeg"    />
+      
+      <!-- Navigation Menu -->
+      <h5>WHERE'S THE BEAR?</h5>
+  </div>
+  <!-- Image menu in Header to contain an Image and
+      a sample text over that image -->
+  <div id="header-image-menu">
+  </div>
+</header>
+
   <head>
     <title>Where's the Bear New Girl</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?f=classic&s=solid&pc=%23e3e3e3">
   </head>
+
   <body>
       <div class="sidenav">
         <li><a href="{{ url_for('home') }}">Home</a></li>
