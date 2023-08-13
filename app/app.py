@@ -172,6 +172,7 @@ def S1E23():
 def S1E24():
     return render_template('S1E24.html')
 
+#Season 2
 @app.route('/S2E1/')
 def S2E1():
     return render_template('S2E1.html')
@@ -271,6 +272,103 @@ def S2E24():
 @app.route('/S2E25/')
 def S2E25():
     return render_template('S2E25.html')
+
+#Season 3
+@app.route('/S3E1/')
+def S3E1():
+    return render_template('S3E1.html')
+
+@app.route('/S3E2/')
+def S3E2():
+    return render_template('S3E2.html')
+
+@app.route('/S3E3/')
+def S3E3():
+    return render_template('S3E3.html')
+
+@app.route('/S3E4/')
+def S3E4():
+    return render_template('S3E4.html')
+
+@app.route('/S3E5/')
+def S3E5():
+    return render_template('S3E5.html')
+
+@app.route('/S3E6/')
+def S3E6():
+    return render_template('S3E6.html')
+
+@app.route('/S3E7/')
+def S3E7():
+    return render_template('S3E7.html')
+
+@app.route('/S3E8/')
+def S3E8():
+    return render_template('S3E8.html')
+
+@app.route('/S3E9/')
+def S3E9():
+    return render_template('S3E9.html')
+
+@app.route('/S3E10/')
+def S3E10():
+    return render_template('S3E10.html')
+
+@app.route('/S3E11/')
+def S3E11():
+    return render_template('S3E11.html')
+
+@app.route('/S3E12/')
+def S3E12():
+    return render_template('S3E12.html')
+
+@app.route('/S3E13/')
+def S3E13():
+    return render_template('S3E13.html')
+
+@app.route('/S3E14/')
+def S3E14():
+    return render_template('S3E14.html')
+
+@app.route('/S3E15/')
+def S3E15():
+    return render_template('S3E15.html')
+
+@app.route('/S3E16/')
+def S3E16():
+    return render_template('S3E16.html')
+
+@app.route('/S3E17/')
+def S3E17():
+    return render_template('S3E17.html')
+
+@app.route('/S3E18/')
+def S3E18():
+    return render_template('S3E18.html')
+
+@app.route('/S3E19/')
+def S3E19():
+    return render_template('S3E19.html')
+
+@app.route('/S3E20/')
+def S3E20():
+    return render_template('S3E20.html')
+
+@app.route('/S3E21/')
+def S3E21():
+    return render_template('S1E21.html')
+
+@app.route('/S3E22/')
+def S3E22():
+    return render_template('S3E22.html')
+
+@app.route('/S3E23/')
+def S3E23():
+    return render_template('S3E23.html')
+
+
+
+
 
 def allowed_file(filename):
     return '.' in filename and \
