@@ -5,7 +5,19 @@ document.body.innerHTML = `
 <html lang="en">
 
 <head>
+
 <style>
+body {
+  text-align: center;
+  /* Same as the width of the sidenav */
+  font-size: 20px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  margin-left: 250px;
+  font-weight:bold;
+  font-family: Arial, "Helvetica Neue", Helvetica;
+}
+
 </style>
 </head>
 <body>

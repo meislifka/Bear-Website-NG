@@ -29,19 +29,12 @@ header {
   font-size: 45px;
   font-weight: bold;
   vertical-align: center;
-  margin-left: 242px;
   margin-top: -8px;
   padding-left: 20px;
+  margin-left: -10px;
 }
 
-main {
-  text-align: center;
-  /* Same as the width of the sidenav */
-  font-size: 20px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  transform: translateX(110px);
-}
+
 
 .next {
   background-color: rgb(0, 64, 241);
