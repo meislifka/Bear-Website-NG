@@ -15,6 +15,7 @@
   text-align: center;
   letter-spacing: -1px;
   color: #999;
+
   /*transform: translateX(20px);*/
 }
 
@@ -32,11 +33,13 @@ header {
   margin-top: -8px;
   padding-left: 20px;
   margin-left: -10px;
+  margin-right: 0px;
 }
 
 
 
-.next {
+.next,
+.back {
   background-color: rgb(0, 64, 241);
   color: white;
   padding: 5px;
