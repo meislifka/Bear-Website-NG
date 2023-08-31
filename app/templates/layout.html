@@ -1,168 +1,167 @@
 <!DOCTYPE html>
 
 <html>
-  <!-- Header Menu of the Page -->
+<!-- Header Menu of the Page -->
 
 
-  <head>
-    <title>Where's the Bear New Girl</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?f=classic&s=solid&pc=%23e3e3e3">
-  </head>
+<head>
+  <title>Where's the Bear New Girl</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?f=classic&s=solid&pc=%23e3e3e3">
+</head>
 
-  <header>
-    <div class="top-header" >
-       
-      <div>
-        <h5><strong>WHERE'S THE BEAR?</strong></h5>
-        
+<header>
+  <div class="top-header">
+
+    <div>
+      <h5><strong>WHERE'S THE BEAR?</strong></h5>
+
     </div>
 
-    <div class = "bear">
+    <div class="bear">
       <div class="face">
-          <div class = "earL">
-              <div class = "inEarL"></div>
-          </div>
-          
-          <div class = "earR">
-              <div class = "inEarR"></div>
-          </div>
-          <div class= "eyeL">
-              <div class = "eyeball"></div>
-          </div>
-          <div class= "eyeR">
-              <div class = "eyeball"></div>
-          </div>
-          <div class="nose"></div>
+        <div class="earL">
+          <div class="inEarL"></div>
+        </div>
+
+        <div class="earR">
+          <div class="inEarR"></div>
+        </div>
+        <div class="eyeL">
+          <div class="eyeball"></div>
+        </div>
+        <div class="eyeR">
+          <div class="eyeball"></div>
+        </div>
+        <div class="nose"></div>
       </div>
-      <div class = "handL"></div>
-      <div class = "handR"></div>
-      <div class = "legL"></div>
-      <div class = "legR"></div>
-      <div class = "shadow"></div>
-  </div>
-  </header>
-
-  <body>
-
-      <div class="sidenav">
-        <li><a href="{{ url_for('home') }}">Home</a></li>
-        <button class="dropdown-btn">Season 1
-          <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
-        </button>
-        
-        <div class="dropdown-container">
-          <a href="{{ url_for('S1E1') }}">1: Pilot</a>
-          <a href="{{ url_for('S1E2') }}">2: Kyptonite</a>
-          <a href="{{ url_for('S1E3') }}">3: Wedding</a>
-          <a href="{{ url_for('S1E4') }}">4: Naked</a>
-          <a href="{{ url_for('S1E5') }}">5: Cece Crashes</a>
-          <a href="{{ url_for('S1E6') }}">6: Thanksgiving</a>
-          <a href="{{ url_for('S1E7') }}">7: Bells</a>
-          <a href="{{ url_for('S1E8') }}">8: Bad in Bed</a>
-          <a href="{{ url_for('S1E9') }}">9: The 23rd</a>
-          <a href="{{ url_for('S1E10') }}">10: The Story of the 50</a>
-          <a href="{{ url_for('S1E11') }}">11: Jess and Julia</a>
-          <a href="{{ url_for('S1E12') }}">12: The Landlord</a>
-          <a href="{{ url_for('S1E13') }}">13: Valentine's Day</a>
-          <a href="{{ url_for('S1E14') }}">14: Bully</a>
-          <a href="{{ url_for('S1E15') }}">15: Injured</a>
-          <a href="{{ url_for('S1E16') }}">16: Control</a>
-          <a href="{{ url_for('S1E17') }}">17: Fancyman</a>
-          <a href="{{ url_for('S1E18') }}">18: Fancyman II</a>
-          <a href="{{ url_for('S1E19') }}">19: Secrets</a>
-          <a href="{{ url_for('S1E20') }}">20: Normal</a>
-          <a href="{{ url_for('S1E21') }}">21: Kids</a>
-          <a href="{{ url_for('S1E22') }}">22: Tomatoes</a>
-          <a href="{{ url_for('S1E23') }}">23: Backslide</a>
-          <a href="{{ url_for('S1E24') }}">24: See Ya</a>
-        </div>
-
-        <button class="dropdown-btn">Season 2
-          <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="{{ url_for('S2E1') }}">1: Re-Launch</a>
-          <a href="{{ url_for('S2E2') }}">2: Katie</a>
-          <a href="{{ url_for('S2E3') }}">3: Fluffer</a>
-          <a href="{{ url_for('S2E4') }}">4: Neighbors</a>
-          <a href="{{ url_for('S2E5') }}">5: Models</a>
-          <a href="{{ url_for('S2E6') }}">6: Halloween</a>
-          <a href="{{ url_for('S2E7') }}">7: Menzies</a>
-          <a href="{{ url_for('S2E8') }}">8: Parents</a>
-          <a href="{{ url_for('S2E9') }}">9: Eggs</a>
-          <a href="{{ url_for('S2E10') }}">10: Bathtub</a>
-          <a href="{{ url_for('S2E11') }}">11: Santa</a>
-          <a href="{{ url_for('S2E12') }}">12: Cabin</a>
-          <a href="{{ url_for('S2E13') }}">13: A Father's Love</a>
-          <a href="{{ url_for('S2E14') }}">14: Pepperwood</a>
-          <a href="{{ url_for('S2E15') }}">15: Cooler</a>
-          <a href="{{ url_for('S2E16') }}">16: Table 34</a>
-          <a href="{{ url_for('S2E17') }}">17: Parking Spot</a>
-          <a href="{{ url_for('S2E18') }}">18: TinFinity</a>
-          <a href="{{ url_for('S2E19') }}">19: Quick Hardening Caulk</a>
-          <a href="{{ url_for('S2E20') }}">20: Chicago</a>
-          <a href="{{ url_for('S2E21') }}">21: First Date</a>
-          <a href="{{ url_for('S2E22') }}">22: Bachelorette Party</a>
-          <a href="{{ url_for('S2E23') }}">23: Virgins</a>
-          <a href="{{ url_for('S2E24') }}">24: Winston's Birthday (Part 1)</a>
-          <a href="{{ url_for('S2E25') }}">24: Elaine's Big Day</a>
-        </div>
-        <button class="dropdown-btn">Season 3
-          <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="{{ url_for('S3E1') }}">1: All in </a>
-          <a href="{{ url_for('S3E2') }}">2: Nerd </a>
-          <a href="{{ url_for('S3E3') }}">3: Double Date </a>
-          <a href="{{ url_for('S3E4') }}">4: The Captain </a>
-          <a href="{{ url_for('S3E5') }}">5: The Box </a>
-          <a href="{{ url_for('S3E6') }}">6: Keaton </a>
-          <a href="{{ url_for('S3E7') }}">7: Coach </a>
-          <a href="{{ url_for('S3E8') }}">8: Menus </a>
-          <a href="{{ url_for('S3E9') }}">9: Longest Night Ever </a>
-          <a href="{{ url_for('S3E10') }}">10: Thanksgiving III </a>
-          <a href="{{ url_for('S3E11') }}">11: Clavado En Un Bar </a>
-          <a href="{{ url_for('S3E12') }}">12: Basketsball </a>
-          <a href="{{ url_for('S3E13') }}">13: Birthday </a>
-          <a href="{{ url_for('S3E14') }}">14: Prince </a>
-          <a href="{{ url_for('S3E15') }}">15: Exes </a>
-          <a href="{{ url_for('S3E16') }}">16: Sister </a>
-          <a href="{{ url_for('S3E17') }}">17: Sister II </a>
-          <a href="{{ url_for('S3E18') }}">18: Sister III </a>
-          <a href="{{ url_for('S3E19') }}">19: Fired Up </a>
-          <a href="{{ url_for('S3E20') }}">20: Mars Landing </a>
-          <a href="{{ url_for('S3E21') }}">21: Big New </a>
-          <a href="{{ url_for('S3E22') }}">22: Dance </a>
-          <a href="{{ url_for('S3E23') }}">23: Cruise</a>
-
-        </div>
-        </div>
-      </div>
-    <div class="container">
-      {% block content %}
-      {% endblock %}
+      <div class="handL"></div>
+      <div class="handR"></div>
+      <div class="legL"></div>
+      <div class="legR"></div>
+      <div class="shadow"></div>
     </div>
-    <script>
-      //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+</header>
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
+<body>
+
+  <div class="sidenav">
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <button class="dropdown-btn">Season 1
+      <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
+    </button>
+
+    <div class="dropdown-container">
+      <a href="{{ url_for('S1E1') }}">1: Pilot</a>
+      <a href="{{ url_for('S1E2') }}">2: Kyptonite</a>
+      <a href="{{ url_for('S1E3') }}">3: Wedding</a>
+      <a href="{{ url_for('S1E4') }}">4: Naked</a>
+      <a href="{{ url_for('S1E5') }}">5: Cece Crashes</a>
+      <a href="{{ url_for('S1E6') }}">6: Thanksgiving</a>
+      <a href="{{ url_for('S1E7') }}">7: Bells</a>
+      <a href="{{ url_for('S1E8') }}">8: Bad in Bed</a>
+      <a href="{{ url_for('S1E9') }}">9: The 23rd</a>
+      <a href="{{ url_for('S1E10') }}">10: The Story of the 50</a>
+      <a href="{{ url_for('S1E11') }}">11: Jess and Julia</a>
+      <a href="{{ url_for('S1E12') }}">12: The Landlord</a>
+      <a href="{{ url_for('S1E13') }}">13: Valentine's Day</a>
+      <a href="{{ url_for('S1E14') }}">14: Bully</a>
+      <a href="{{ url_for('S1E15') }}">15: Injured</a>
+      <a href="{{ url_for('S1E16') }}">16: Control</a>
+      <a href="{{ url_for('S1E17') }}">17: Fancyman</a>
+      <a href="{{ url_for('S1E18') }}">18: Fancyman II</a>
+      <a href="{{ url_for('S1E19') }}">19: Secrets</a>
+      <a href="{{ url_for('S1E20') }}">20: Normal</a>
+      <a href="{{ url_for('S1E21') }}">21: Kids</a>
+      <a href="{{ url_for('S1E22') }}">22: Tomatoes</a>
+      <a href="{{ url_for('S1E23') }}">23: Backslide</a>
+      <a href="{{ url_for('S1E24') }}">24: See Ya</a>
+    </div>
+
+    <button class="dropdown-btn">Season 2
+      <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="{{ url_for('S2E1') }}">1: Re-Launch</a>
+      <a href="{{ url_for('S2E2') }}">2: Katie</a>
+      <a href="{{ url_for('S2E3') }}">3: Fluffer</a>
+      <a href="{{ url_for('S2E4') }}">4: Neighbors</a>
+      <a href="{{ url_for('S2E5') }}">5: Models</a>
+      <a href="{{ url_for('S2E6') }}">6: Halloween</a>
+      <a href="{{ url_for('S2E7') }}">7: Menzies</a>
+      <a href="{{ url_for('S2E8') }}">8: Parents</a>
+      <a href="{{ url_for('S2E9') }}">9: Eggs</a>
+      <a href="{{ url_for('S2E10') }}">10: Bathtub</a>
+      <a href="{{ url_for('S2E11') }}">11: Santa</a>
+      <a href="{{ url_for('S2E12') }}">12: Cabin</a>
+      <a href="{{ url_for('S2E13') }}">13: A Father's Love</a>
+      <a href="{{ url_for('S2E14') }}">14: Pepperwood</a>
+      <a href="{{ url_for('S2E15') }}">15: Cooler</a>
+      <a href="{{ url_for('S2E16') }}">16: Table 34</a>
+      <a href="{{ url_for('S2E17') }}">17: Parking Spot</a>
+      <a href="{{ url_for('S2E18') }}">18: TinFinity</a>
+      <a href="{{ url_for('S2E19') }}">19: Quick Hardening Caulk</a>
+      <a href="{{ url_for('S2E20') }}">20: Chicago</a>
+      <a href="{{ url_for('S2E21') }}">21: First Date</a>
+      <a href="{{ url_for('S2E22') }}">22: Bachelorette Party</a>
+      <a href="{{ url_for('S2E23') }}">23: Virgins</a>
+      <a href="{{ url_for('S2E24') }}">24: Winston's Birthday (Part 1)</a>
+      <a href="{{ url_for('S2E25') }}">24: Elaine's Big Day</a>
+    </div>
+    <button class="dropdown-btn">Season 3
+      <i class="fa-solid fa-caret-down" style="color: #0a0000;"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="{{ url_for('S3E1') }}">1: All in </a>
+      <a href="{{ url_for('S3E2') }}">2: Nerd </a>
+      <a href="{{ url_for('S3E3') }}">3: Double Date </a>
+      <a href="{{ url_for('S3E4') }}">4: The Captain </a>
+      <a href="{{ url_for('S3E5') }}">5: The Box </a>
+      <a href="{{ url_for('S3E6') }}">6: Keaton </a>
+      <a href="{{ url_for('S3E7') }}">7: Coach </a>
+      <a href="{{ url_for('S3E8') }}">8: Menus </a>
+      <a href="{{ url_for('S3E9') }}">9: Longest Night Ever </a>
+      <a href="{{ url_for('S3E10') }}">10: Thanksgiving III </a>
+      <a href="{{ url_for('S3E11') }}">11: Clavado En Un Bar </a>
+      <a href="{{ url_for('S3E12') }}">12: Basketsball </a>
+      <a href="{{ url_for('S3E13') }}">13: Birthday </a>
+      <a href="{{ url_for('S3E14') }}">14: Prince </a>
+      <a href="{{ url_for('S3E15') }}">15: Exes </a>
+      <a href="{{ url_for('S3E16') }}">16: Sister </a>
+      <a href="{{ url_for('S3E17') }}">17: Sister II </a>
+      <a href="{{ url_for('S3E18') }}">18: Sister III </a>
+      <a href="{{ url_for('S3E19') }}">19: Fired Up </a>
+      <a href="{{ url_for('S3E20') }}">20: Mars Landing </a>
+      <a href="{{ url_for('S3E21') }}">21: Big New </a>
+      <a href="{{ url_for('S3E22') }}">22: Dance </a>
+      <a href="{{ url_for('S3E23') }}">23: Cruise</a>
+
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <script>
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
     }
-  });
-}
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
-
-
-

@@ -1,84 +1,90 @@
 /*body text*/
-body { 
-    margin: 0;
-    padding: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    overflow-x:hidden;
-  }
-  /*
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+/*
    * Formatting the header area
    */
-  header {
-    background-color: #112bee;
-    height: 35px;
-    width: 100%;
-    opacity: .9;
-    margin-bottom: 10px;
-  }
-  /*Seelion heading*/
-  .text-box{
-    margin: 0;
-    font-size: 1.7em;
-    color: #fff;
-    float: left;
-   }
+header {
+  background-color: #112bee;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
 
-  header h1.logo {
-    margin: 0;
-    font-size: 1.7em;
-    color: #fff;
-    text-transform: uppercase;
-    float: left;
-  }
-  header h1.logo:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  /*
+.text-box {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  float: left;
+}
+
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
    * Centering the body content
    */
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  div.home {
-    padding: 10px 0 30px 0;
-    background-color: #ffffff;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-  }
-  div.about {
-    padding: 10px 0 30px 0;
-    background-color: #ffffff;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: black;
-    transform: translateX(125px);
-  }
-
- img {
-    margin-left:405px;
-    border: 7px solid rgb(0, 64, 241);   
-    border-radius: 25px;
-    
-    ;  
-    
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
+
+div.home {
+  padding: 10px 0 30px 0;
+  background-color: #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+div.about {
+  padding: 10px 0 30px 0;
+  background-color: #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  transform: translateX(125px);
+}
+
+img {
+  margin-left: 405px;
+  border: 7px solid rgb(0, 64, 241);
+  border-radius: 25px;
+
+  ;
+
+}
+
 .bear {
-  margin-left:300px;
+  margin-left: 300px;
   margin-top: 0px;
   border-radius: 25px;
   border: 0px;
- 
+
 }
 
 .bear2 {
@@ -86,221 +92,168 @@ body {
   margin-top: 0px;
   border-radius: 25px;
   border: 0px;
- 
+
 }
 
 
 
-div.top-header{
-  background-color: rgb(0, 64, 241); 
+div.top-header {
+  background-color: rgb(0, 64, 241);
 
 }
 
 video {
-  margin-left:405px;
+  margin-left: 405px;
   border: 7px solid rgb(0, 64, 241);
-  border-radius: 25px;  
-  
+  border-radius: 25px;
+
 }
 
-  h1 {
-    font-size: 2em;
-    color: rgb(0, 64, 241); 
-    margin-top: 40px;
-    text-align: center;
-    letter-spacing: -2px;
-    margin-left: 200px;
-    transform: translateX(20px);
-  }
-  h2 {
-    font-size: 3em;
-    text-shadow: -1px -1px 0 #000;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
-    color: rgb(0, 64, 241); 
-    margin-top: 40px;
-    text-align: center;
-    letter-spacing: -2px;
-    margin-left: 200px;
-    transform: translateX(20px);
-  }
-  h3 {
-    font-size: 1.7em;
-    font-weight: 100;
-    margin-left: 200px;
-    margin-top: 10px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #999;
-    transform: translateX(20px);
-  }
-  h4 {
-    font-size: 1.7em;
-    font-weight: 100;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: rgb(18, 138, 0);
-    transform: translateX(20px);
-  }
-  h5 {
-    text-shadow: -2px -2px 0 #000;
-    font-size: 2.5em;
-    font-weight: 200;
-    transform: translateX(300px);
-    margin-top: 10px;
-  
-    
-    letter-spacing: -1px;
-    color: #fbff00;
-    /*font-size: 2.5em;
+h1 {
+  font-size: 2em;
+  color: rgb(0, 64, 241);
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+  margin-left: 200px;
+  transform: translateX(20px);
+}
+
+h2 {
+  font-size: 3em;
+  text-shadow: -1px -1px 0 #000;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+  color: rgb(0, 64, 241);
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+  margin-left: 200px;
+  transform: translateX(20px);
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-left: 200px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+  transform: translateX(20px);
+}
+
+h4 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: rgb(18, 138, 0);
+  transform: translateX(20px);
+}
+
+h5 {
+  text-shadow: -2px -2px 0 #000;
+  font-size: 2.5em;
+  font-weight: 200;
+  transform: translateX(300px);
+  margin-top: 10px;
+
+
+  letter-spacing: -1px;
+  color: #fbff00;
+  /*font-size: 2.5em;
     font-weight: 200;
     margin-left: 670px;
     margin-top: 10px;
     text-align: left;
     letter-spacing: -1px;
     color: #fbff00;*/
-  }
-
-  h6 {
-    font-size: 1.2em;
-    color: rgb(0, 64, 241); 
-    margin-top: 40px;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-left: 200px;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
-  .menu {
-    float: right;
-    margin-top: 8px;
-  }
-  .menu li {
-    display: inline;
-  }
-  .menu li + li {
-    margin-left: 35px;
-  }
-  .menu li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-
-  .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 50%;
-    padding: 2px;
-  }
-
-  label{
-    display:inline-block;
-    width:200px;
-    margin-right:-60px;
-    text-align:left;
-  }
-
-
-  #textboxid
-{
-    height:700px;
-    font-size:14pt;
 }
 
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  transition:  background-color .15s;
-  transition:  color .15s;
+h6 {
+  font-size: 1.2em;
+  color: rgb(0, 64, 241);
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-left: 200px;
 }
 
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+p {
+  font-size: 1.2em;
 }
 
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: yellow;
-  background-color: #818181;
-}
-
-/* Main content */
-.main {
-  margin-left: 250px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: rgb(0, 25, 188);
-  color: yellow;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
+.menu {
   float: right;
-  padding-right: 8px;
+  margin-top: 8px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li+li {
+  margin-left: 35px;
+}
+
+.menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 2px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  margin-right: -60px;
+  text-align: left;
+}
+
+
+#textboxid {
+  height: 700px;
+  font-size: 14pt;
 }
 
 
 
-.bear{
+
+.bear {
   position: absolute;
-  top:10%;
+  top: 10%;
   right: 50px;
   height: 120px;
-  width:80px;
-  background-color:#8B4513;
-  border:5px solid black;
-  border-radius:30%;
+  width: 80px;
+  background-color: #8B4513;
+  border: 5px solid black;
+  border-radius: 30%;
   z-index: 1;
   opacity: 1;
 
 }
 
-.face{
+.face {
   position: relative;
   background-color: #8B4513;
   border: 5px solid black;
   height: 90px;
-  width:110px;
+  width: 110px;
   border-radius: 50%;
-  bottom:30px;
-  right:20px;
+  bottom: 30px;
+  right: 20px;
 }
-.earL,.earR{
+
+.earL,
+.earR {
   position: relative;
   background-color: #8B4513;
   border: 5px solid black;
@@ -308,38 +261,43 @@ video {
   width: 40px;
   border-radius: 0px 0px 40px 40px;
 }
-.earL{
+
+.earL {
   transform: rotate(145deg);
   bottom: 20px;
   right: 13px;
 }
-.earR{
+
+.earR {
   transform: rotate(-145deg);
-  bottom:50px;
-  left:75px;
+  bottom: 50px;
+  left: 75px;
 }
 
-.inEarL,.inEarR{
+.inEarL,
+.inEarR {
   position: relative;
   background-color: #f3b486;
-  
+
   height: 15px;
   width: 30px;
   border-radius: 0px 0px 40px 40px;
 }
 
-.inEarR{
-  
-  bottom:-4px;
-  left:4px;
-}
-.inEarL{
- 
-  bottom:-3px;
-  left:4px;
+.inEarR {
+
+  bottom: -4px;
+  left: 4px;
 }
 
-.eyeL,.eyeR{
+.inEarL {
+
+  bottom: -3px;
+  left: 4px;
+}
+
+.eyeL,
+.eyeR {
   position: relative;
   background-color: black;
   height: 33px;
@@ -347,28 +305,29 @@ video {
   border-radius: 50%;
 }
 
-.eyeL{
+.eyeL {
   transform: rotate(25deg);
   bottom: 40px;
   left: 10px;
 }
-.eyeR{
+
+.eyeR {
   transform: rotate(-25deg);
-  bottom:73px;
-  left:72px;
+  bottom: 73px;
+  left: 72px;
 }
 
-.eyeball{
+.eyeball {
   position: relative;
-  top:8px;
+  top: 8px;
   left: 7px;
-  width:14px;
-  height:14px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: white;
 }
 
-.nose{
+.nose {
   position: relative;
   height: 8px;
   width: 15px;
@@ -378,7 +337,8 @@ video {
   left: 48px;
 }
 
-.handL,.handR{
+.handL,
+.handR {
   position: relative;
   width: 25px;
   height: 43px;
@@ -387,24 +347,28 @@ video {
   border: 2px solid black;
 }
 
-.handL{
+.handL {
   transform: rotate(90deg);
   bottom: 28px;
   right: 12px;
-  animation:wave 3s infinite;
+  animation: wave 3s infinite;
   transform-origin: top;
 }
-@keyframes wave{
-  50% {transform: rotate(120deg)}
+
+@keyframes wave {
+  50% {
+    transform: rotate(120deg)
+  }
 }
 
-.handR{
-  transform:rotate(-90deg);
-  bottom:92px;
-  left:89px;
+.handR {
+  transform: rotate(-90deg);
+  bottom: 92px;
+  left: 89px;
 }
 
-.legL,.legR{
+.legL,
+.legR {
   position: relative;
   width: 17px;
   height: 25px;
@@ -413,24 +377,24 @@ video {
   border: 2px solid black;
 }
 
-.legL{
+.legL {
   bottom: 70px;
   left: 15px;
 }
 
-.legR{
-  bottom:100px;
-  left:45px;
+.legR {
+  bottom: 100px;
+  left: 45px;
 }
 
-.shadow{
+.shadow {
   position: relative;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 30px;
-  width:100px;
+  width: 100px;
   border-radius: 50%;
   bottom: 105px;
-  right:10px;
+  right: 10px;
 }
 
 .timestamp {
@@ -440,10 +404,10 @@ video {
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
-a{
+a {
   text-decoration: none;
   padding: 8px 16px;
-  
+
 }
 
 a:hover {
@@ -452,19 +416,19 @@ a:hover {
 }
 
 .previous {
-  background-color: rgb(0, 64, 241); 
+  background-color: rgb(0, 64, 241);
   color: white;
   border-radius: 8px;
   position: relative;
-  left:408px;
+  left: 408px;
   z-index: 1;
 }
 
 .next {
-  background-color: rgb(0, 64, 241); 
+  background-color: rgb(0, 64, 241);
   color: white;
   border-radius: 8px;
   position: relative;
-  left:828px;
+  left: 828px;
   z-index: 1;
 }
