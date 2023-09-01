@@ -39,13 +39,14 @@ main {
     text-align: left;
     cursor: pointer;
     outline: none;
+    font-weight: normal;
 }
 
 /* On mouse-over */
 .sidenav a:hover,
 .dropdown-btn:hover {
     color: yellow;
-    background-color: #818181;
+    background-color: rgba(0, 0, 255, .2);
 }
 
 /* Main content */
