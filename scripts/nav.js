@@ -88,7 +88,7 @@ body {
     <a href="S2E22.html">22: Bachelorette Party</a>
     <a href="S2E23.html">23: Virgins</a>
     <a href="S2E24.html">24: Winston's Birthday (Part 1)</a>
-    <a href="S2E25.html">24: Elaine's Big Day</a>
+    <a href="S2E25.html">25: Elaine's Big Day</a>
   </div>
 
   <button onclick="
