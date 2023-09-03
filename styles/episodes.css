@@ -25,6 +25,10 @@
 }
 
 
+.hide {
+  display: none;
+}
+
 
 header {
   display: relative;
@@ -44,8 +48,8 @@ header {
 
 
 
-.next,
-.back {
+.js-next-button,
+.js-back-button {
   background-color: rgb(0, 64, 241);
   color: white;
   padding: 5px;
