@@ -1,10 +1,7 @@
-console.log("test");
-
 document.querySelector('.js-next-button')
   .addEventListener('click', () => {
     nextPage();
   });
-
 
 document.querySelector('.js-back-button')
   .addEventListener('click', () => {
@@ -14,16 +11,16 @@ document.querySelector('.js-back-button')
 
 function nextPage() {
   const title = document.querySelector('title').innerHTML;
-  console.log(title);
+  //console.log(title);
 
   const currSeason = title.substring(
     title.indexOf("S") + 1,
     title.lastIndexOf("E")
   );
-  console.log("current season" + currSeason);
+  //console.log("current season" + currSeason);
 
   let nextEp = (Number(title.split('E')[1])); //val of next ep
-  console.log(typeof nextEp);
+  console.log("NExt Ep: " + nextEp);
 
   let nextSeason = Number(currSeason);
   const newSeasonEp = checkLastEp(nextSeason, nextEp);
@@ -32,41 +29,43 @@ function nextPage() {
     nextEp = newSeasonEp;
     nextSeason++;
   }
+  nextEp++;
 
-  const nextPg = "S" + nextSeason.toString() + "E" + nextEp.toString(); + ".html";
+
+  const nextPg = "S" + nextSeason.toString() + "E" + nextEp.toString() + ".html";
   console.log(nextPg);
   //location.href = nextPg;
 
 }
 
 function checkLastEp(numSeason, numEp) {
-  console.log("ep in function" + numEp);
+  console.log("ep in function: " + numEp);
   const lastEpArr = [24, 25, 23, 22, 22, 22, 8];
-  console.log("ep in array " + lastEpArr[numSeason - 1]);
+  console.log("ep in array: " + lastEpArr[numSeason - 1]);
 
   if (numEp === lastEpArr[numSeason - 1]) {
     console.log("last season");
-    return 1;
+    return 0;
   }
   else {
     console.log("not last");
-    return (numEp + 1);
+    return (numEp);
   }
 }
 
 
 function backPage() {
   const title = document.querySelector('title').innerHTML;
-  console.log(title);
+  //console.log(title);
 
   const currSeason = title.substring(
     title.indexOf("S") + 1,
     title.lastIndexOf("E")
   );
-  console.log("current season" + currSeason);
+  //console.log("current season" + currSeason);
 
   let nextEp = (Number(title.split('E')[1])); //val of next ep
-  console.log(typeof nextEp);
+  //console.log(typeof nextEp);
 
   let nextSeason = Number(currSeason);
   const newSeasonEp = checkFirstEp(nextSeason, nextEp);
@@ -75,10 +74,11 @@ function backPage() {
     nextEp = newSeasonEp;
     nextSeason--;
   }
+  nextEp--;
 
-  const backPg = "S" + nextSeason.toString() + "E" + nextEp.toString(); + ".html";
+  const backPg = "S" + nextSeason.toString() + "E" + nextEp.toString() + ".html";
   console.log(backPg);
-  //location.href = nextPg;
+  location.href = backPg;
 
 }
 
@@ -93,7 +93,7 @@ function checkFirstEp(numSeason, numEp) {
   }
   else {
     console.log("not last");
-    return lastEpArr[numSeason - 1];
+    return numEp;
   }
 }
 

@@ -59,14 +59,13 @@ header {
   text-decoration: none;
   border: none;
   font-size: 20px;
-  transition: background-color .15s;
-  transition: box-shadow .15s;
+  transition: scale .15;
 
 }
 
-.next:hover,
-.back:hover {
-  background-color: rgb(100, 100, 228);
+.js-next-button:hover,
+.js-back-button:hover {
+  transform: scale(0.9);
 }
 
 
