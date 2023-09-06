@@ -17,8 +17,10 @@
   font-size: 30px;
   font-weight: 500;
   margin-top: 10px;
+  margin-bottom: -5px;
   text-align: center;
   letter-spacing: -1px;
+  margin-left: -2px;
   color: #0400ff;
   text-shadow: 1px 1px 5px yellow;
   /*transform: translateX(20px);*/
@@ -60,7 +62,7 @@ header {
   border: none;
   font-size: 20px;
   transition: scale .15;
-
+  margin-top: 15px;
 }
 
 .js-next-button:hover,

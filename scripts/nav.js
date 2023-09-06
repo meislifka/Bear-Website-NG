@@ -1,26 +1,6 @@
 const body = document.body.innerHTML;
 
 document.body.innerHTML = `
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<style>
-body {
-  text-align: center;
-  /* Same as the width of the sidenav */
-  font-size: 20px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  margin-left: 250px;
-  font-weight:bold;
-  font-family: Arial, "Helvetica Neue", Helvetica;
-}
-
-</style>
-</head>
-<body>
   <header> Where's the Bear?</header>
   <nav id="nav-placeholder" class="sidenav">
     <li><a href="index.html">Home</a></li>
@@ -233,14 +213,13 @@ body {
     <a href="S7E8.html">8: Engram Pattersky</a>
   </div>
 
-
-
-
   </nav>
-</body>
 
-</html>` + body;
+  ` + body;
 
+
+
+//changes the class of the button to be active if clicked
 function poop(season, id) {
   const s = '.' + season;
   const inText = addSpace(season) + ' v';

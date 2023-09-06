@@ -29,12 +29,13 @@ function nextPage() {
     nextEp = newSeasonEp;
     nextSeason++;
   }
+  // console.log("Next ep before ++: " + nextEp);
   nextEp++;
 
 
   const nextPg = "S" + nextSeason.toString() + "E" + nextEp.toString() + ".html";
   console.log(nextPg);
-  //location.href = nextPg;
+  location.href = nextPg;
 
 }
 
@@ -55,7 +56,7 @@ function checkLastEp(numSeason, numEp) {
 
 
 function backPage() {
-  const title = document.querySelector('title').innerHTML;
+  const title = document.querySelector('title').innerText;
   //console.log(title);
 
   const currSeason = title.substring(
