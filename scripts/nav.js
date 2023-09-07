@@ -6,7 +6,8 @@ document.body.innerHTML = `
     <li><a href="index.html">Home</a></li>
     <button onclick="
       poop('Season1','dropD-1');" 
-      class="dropdown-btn Season1" 
+      class="dropdown-btn" 
+      id="Season1";
       >Season 1 >
     </button>
 
@@ -39,7 +40,8 @@ document.body.innerHTML = `
 
     <button onclick="
       poop('Season2','dropD-2');" 
-      class="dropdown-btn Season2" 
+      class="dropdown-btn" 
+      id="Season2";
       >Season 2 >
     </button>
 
@@ -73,7 +75,8 @@ document.body.innerHTML = `
 
   <button onclick="
       poop('Season3','dropD-3');" 
-      class="dropdown-btn Season3" 
+      class="dropdown-btn" 
+      id="Season3";
       >Season 3 >
     </button>
 
@@ -105,7 +108,8 @@ document.body.innerHTML = `
 
   <button onclick="
       poop('Season4','dropD-4');" 
-      class="dropdown-btn Season4" 
+      class="dropdown-btn" 
+      id="Season4";
       >Season 4 >
     </button>
 
@@ -136,7 +140,8 @@ document.body.innerHTML = `
 
   <button onclick="
       poop('Season5','dropD-5');" 
-      class="dropdown-btn Season5" 
+      class="dropdown-btn" 
+      id="Season5";
       >Season 5 >
     </button>
 
@@ -167,7 +172,8 @@ document.body.innerHTML = `
 
   <button onclick="
       poop('Season6','dropD-6');" 
-      class="dropdown-btn Season6" 
+      class="dropdown-btn" 
+      id="Season6";
       >Season 6 >
     </button>
 
@@ -198,7 +204,8 @@ document.body.innerHTML = `
 
   <button onclick="
       poop('Season7','dropD-7');" 
-      class="dropdown-btn Season7" 
+      class="dropdown-btn" 
+      id="Season7";
       >Season 7 >
     </button>
 
@@ -217,14 +224,12 @@ document.body.innerHTML = `
 
   ` + body;
 
-
-
 //changes the class of the button to be active if clicked
 function poop(season, id) {
-  const s = '.' + season;
+
   const inText = addSpace(season) + ' v';
   //console.log(s);
-  const buttonElement = document.querySelector(s);
+  const buttonElement = document.getElementById(season);
   //console.log(buttonElement.innerText);
   if (buttonElement.innerText.includes('>')) {
     buttonElement.innerText = (`${inText}`);
