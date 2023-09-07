@@ -1,9 +1,9 @@
-document.querySelector('.js-next-button')
+document.getElementById('js-next-button')
   .addEventListener('click', () => {
     nextPage();
   });
 
-document.querySelector('.js-back-button')
+document.getElementById("js-back-button")
   .addEventListener('click', () => {
     backPage();
   });

@@ -1,4 +1,4 @@
-.epTitle {
+#epTitle {
   font-size: 50px;
 
   text-shadow: -1px -1px 0 #000;
@@ -12,7 +12,7 @@
 
 }
 
-.timeStamp {
+#timeStamp {
   font-family: "Cascadia Code";
   font-size: 30px;
   font-weight: 500;
@@ -25,11 +25,6 @@
   color: #0400ff;
   text-shadow: 1px 1px 5px yellow;
   /*transform: translateX(20px);*/
-}
-
-
-.hide {
-  display: none;
 }
 
 
@@ -51,8 +46,8 @@ header {
 
 
 
-.js-next-button,
-.js-back-button {
+#js-next-button,
+#js-back-button {
   background-color: rgb(0, 64, 241);
   color: white;
   padding: 5px;
@@ -67,8 +62,8 @@ header {
   cursor: pointer;
 }
 
-.js-next-button:hover,
-.js-back-button:hover {
+#js-next-button:hover,
+#js-back-button:hover {
   transform: scale(0.9);
 }
 
